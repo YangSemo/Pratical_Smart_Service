@@ -1,3 +1,9 @@
 .idea
 *.DS_Store
 MNIST
+dataset
+*.doc
+week2/fedavg_mnist/outputs
+week2/fedavg_mnist/docs
+week2/fedprox_mnist/outputs
+week2/fedprox_mnist/docs
