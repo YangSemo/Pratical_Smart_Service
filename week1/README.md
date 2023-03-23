@@ -5,11 +5,11 @@
 - find_lr() 적용 전과 전용 후의 결과 차이 (파란선이 find_lr() 적용한 그래프) <br>
 => 초기 모델의 파라미터 세팅을 잘 못함
 <img src="./images/exp2_result.png" width="800" height="500">
-- find_lr() 초기 모델의 파라미터 값을 변경함
-  - find_lr() 적용 전 모델의 파라미터 <br>
-<img src="./images/before_find_lr.png" width="400" height="100">
-  - find_lr() 적용 후 모델의 파라미터
-<img src="./images/after_find_lr.png" width="400" height="100">
+  - find_lr() 초기 모델의 파라미터 값을 변경함
+    - find_lr() 적용 전 모델의 파라미터 <br>
+  <img src="./images/before_find_lr.png" width="400" height="100">
+    - find_lr() 적용 후 모델의 파라미터
+  <img src="./images/after_find_lr.png" width="400" height="100">
 
 
 ## exp3_integrated_gradients.py
