@@ -17,7 +17,7 @@ from common import *
 #cnn model for mnist
 
 # wandb 사용을 위함
-wandb.init(project="torch-mnist", entity="yangsemo")
+wandb.init(project="torch-mnist", entity="yangsemo", name="exp3")
 
 # 재현성을 위한 세팅
 random_seed = 0

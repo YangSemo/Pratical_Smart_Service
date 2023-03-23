@@ -15,7 +15,7 @@ import torch.nn as nn
 #linear model for mnist
 
 # wandb 사용을 위함
-wandb.init(project="torch-mnist", entity="yangsemo")
+wandb.init(project="torch-mnist", entity="yangsemo", name="exp2_find_lr")
 
 # 재현성을 위한 세팅
 random_seed = 0
@@ -114,8 +114,8 @@ wandb.watch(model, criterion, log="all", log_freq=10)
 # plt.xlabel('log10 Learning Rate')
 # plt.ylabel('Loss')
 # plt.show()
-
-#print( (log_lrs[losses.index(min(losses))] *2 + log_lrs[losses.index(max(losses))]) / 3)
+#
+# print( (log_lrs[losses.index(min(losses))] *2 + log_lrs[losses.index(max(losses))]) / 3)
 
 model.train()
 for epoch in range(num_epoch):
