@@ -15,3 +15,12 @@
 ## exp3_integrated_gradients.py
 - matplotlib 버전 업데이트로 인해 visualize_image_attr()에 들어가서 grid() 파라미터 명 변경 필요<br>
 <img src="./images/exp_error.png" width="300" height="100">
+
+
+## exp4_layter_lrp.py
+- wandb result <br>
+<img src="./images/exp4_result.png" width="800" height="400">
+- first visualize_image_attr <br>
+<img src="./images/exp4_1.png" width="400" height="400">
+- second visualize_image_attr <br>
+<img src="./images/exp4_10.png" width="400" height="400">

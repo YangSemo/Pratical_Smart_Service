@@ -17,7 +17,7 @@ from common import *
 #cnn model for mnist
 
 # wandb 사용을 위함
-wandb.init(project="torch-mnist", entity="yangsemo")
+wandb.init(project="torch-mnist", entity="yangsemo", name='exp4')
 
 # 재현성을 위한 세팅
 random_seed = 0
@@ -31,7 +31,7 @@ random.seed(random_seed)
 
 # 하이퍼 파라미터 세팅
 lr = 1e-3
-batch_size = 1024
+batch_size = 512
 num_epoch = 10
 # 저장 경로 세팅
 ckpt_dir = './checkpoint'
@@ -106,7 +106,7 @@ for epoch in range(num_epoch):
             if i == 0:
                 integrated_gradients = LayerIntegratedGradients(model, model.cnn1)
                 attributions_ig = integrated_gradients.attribute(x, target=y, n_steps=50)
-                print(attributions_ig)
+                # print(attributions_ig)
                 default_cmap = LinearSegmentedColormap.from_list('custom blue',
                                                                 [(0, '#ffffff'),
                                                                  (0.25, '#0000ff'),
